@@ -1,0 +1,5 @@
+# Day 1 smoke config — small on purpose; the point is determinism, not scale.
+seed: 42
+num_agents: 5
+grid_size: 16
+ticks: 100

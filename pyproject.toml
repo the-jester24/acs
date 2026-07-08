@@ -1,0 +1,9 @@
+# Project-level tool config.
+#
+# WHY the pythonpath line: when pytest collects tests/, the repo root is not
+# automatically on sys.path, so `from engine.engine import ...` fails with
+# ModuleNotFoundError. This tells pytest to put the repo root (".") on the
+# path first — the standard fix for a flat src-less layout like ours.
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

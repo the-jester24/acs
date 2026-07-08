@@ -1,0 +1,5 @@
+# Every dependency must be justified (invariant I7):
+# pytest  — test runner; the determinism test is Phase 0's exit criterion.
+# pyyaml  — experiment configs live in yaml (coding standard: no magic numbers).
+pytest
+pyyaml
