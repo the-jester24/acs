@@ -17,8 +17,9 @@
   separators=(",",":"))` so the same event always produces the same bytes.
 - **pytest gotcha:** the repo root isn't on `sys.path` during collection;
   fix with `pythonpath = ["."]` in pyproject.toml.
-- My words: _(pending — give me your one-sentence summary of why one seed
-  gives one exact history, and I'll record it here)_
+- In short: one seed gives one exact history because every "random" choice
+  is just the next number from a formula the seed fully determines — so the
+  same seed replays the same choices, ticks, and events, byte for byte.
 - Resource: Martin Fowler, "Event Sourcing" —
   https://martinfowler.com/eaaDev/EventSourcing.html
 
